@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-wrapper{
+    min-height: 100vh;
+    width: 100%;
+      background: linear-gradient(
+        135deg,
+        #0c0c0c 0%,
+        #1a1a2e 15%,
+        #16213e 35%,
+        #0f3460 50%,
+        #533a7d 70%,
+        #8b5a8c 85%,
+        #a0616a 100%);
+}
+.main-content {
+  transition: all 0.4s ease;
+}
+
+.blur-content {
+  filter: blur(4px);
+  opacity: 0.6;
+  transform: scale(0.99);
+}
+
+.main-content {
+  transition: all 0.4s ease;
+}
+
+.blur-content {
+  filter: blur(4px);
+  opacity: 0.6;
+  transform: scale(0.99);
+}

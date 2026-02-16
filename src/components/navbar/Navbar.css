@@ -1,0 +1,130 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  color: white;
+  z-index: 1000;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  z-index: 1001;
+}
+
+.nav-links a {
+  color: #e0e6ff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transform: translateX(20px);
+  transition: all 0.1s ease ease-in-out;
+}
+
+.nav-links.active a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.nav-links a:hover {
+  opacity: 0.8;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid #9f7aea;
+}
+
+/* Active Link */
+.nav-links a.active {
+  /* border-bottom: 2px solid #fff; */
+  padding-bottom: 3px;
+  color: #ffffff;
+
+  padding-bottom: 4px;
+}
+
+/* Hamburger */
+.hamburger {
+display: none;
+
+  font-size: 18px; /* lebih kecil */
+  color: rgba(255, 255, 255, 0.8); /* putih transparan */
+
+  padding: 8px 12px;
+  border-radius: 12px; /* melengkung */
+
+  background: rgba(255, 255, 255, 0.08); /* glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+   .nav-links {
+    position: fixed;
+    top: 20px;              /* kasih jarak dari atas */
+    right: 20px;            /* kasih jarak dari kanan */
+    height: 100vh;
+    width: 250px;           /* jangan terlalu besar */
+
+    background: rgba(30, 40, 90, 0.6); /* transparan */
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
+
+    border-radius: 20px;    /* melengkung */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 100px;
+    padding-left: 25px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+    transform: translateX(120%);
+    transition: transform 0.4s ease-in-out;
+
+    z-index: 999;
+  }
+  
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1100;
+  }
+  
+}
+
