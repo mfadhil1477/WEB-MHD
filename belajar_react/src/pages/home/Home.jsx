@@ -1,4 +1,4 @@
-import SearchBar from "../../components/searchbar/SearchBar";
+
 import CategoryCard from "./categorycard/CategoryCard";
 import "./Home.css";
 
@@ -28,7 +28,6 @@ export default function Home() {
         <h1>MA’ANIL HADIS</h1>
         {/* <SearchBar placeholder="Cari Topik..." /> */}
       </div>
-
       {/* GRID MENU */}
       <div className="category-grid">
         {categories.map((cat, i) => (
