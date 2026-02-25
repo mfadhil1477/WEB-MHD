@@ -18,6 +18,8 @@ export default function CardHadis({ hadis }) {
   return (
     <div className="card">
 
+      <div className="hadis-title">📖{hadis.title}</div>
+
       {/* Arabic Text */}
       <div className="arabic">{hadis.lafaz}</div>
 

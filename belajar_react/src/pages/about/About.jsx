@@ -72,9 +72,9 @@ Berdasarkan hasil observasi dan penelitian, sebagian besar mahasiswa masih mengg
           />
           <div>
             <h3>Kang Fadhil</h3>
-            <p>Programmer & Pembelajar Ilmu Hadis</p>
+            <p>Pembelajar Ilmu Hadis & Programmer</p>
             <ul>
-              <li>Mahasiswa Informatika</li>
+              <li>Mahasiswa Ilmu Hadis</li>
               <li>Menggabungkan teknologi & khazanah ilmu hadis</li>
             </ul>
           </div>

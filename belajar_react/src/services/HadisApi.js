@@ -7,6 +7,7 @@ export async function fetchHadis() {
   return data
     .filter(item => item.teks_arab)
     .map(item => ({
+      title: item.judul,
       lafaz: item.teks_arab,
       terjemah: item.terjemah,
       summary: item.summary,
