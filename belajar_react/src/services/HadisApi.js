@@ -7,6 +7,7 @@ export async function fetchHadis() {
   return data
     .filter(item => item.teks_arab)
     .map(item => ({
+      kategori: item.kategori,
       title: item.judul,
       lafaz: item.teks_arab,
       terjemah: item.terjemah,
@@ -14,10 +15,12 @@ export async function fetchHadis() {
       analysis: [
         { title: "Analisis Lughawi", content: item.tahap_analisis_lughawi },
         { title: "Penjelasan Makna", content: item.tahap_makna_hadis },
-        { title: "Analisis Tematika", content: item.analisis_tematika },
+        { title: "Interkoneksi Dengan Ayat Al-Qur'an Dan Hadis Lain", content: item.analisis_tematika },
         { title: "Relevansi Kekinian", content: item.relevansi_kekinian },
         { title: "Sanad", content: item.sanad },
-        { title: "Sumber Syarah Hadis", content: item.sumber_syarah },
+        { title: "Rawi a'la", content: item.rawi_ },
+        { title: "Referensi", content: item.sumber_syarah },
+        { title: "Status Hadis", content: item.status_hadis },
       ]
     }));
 }

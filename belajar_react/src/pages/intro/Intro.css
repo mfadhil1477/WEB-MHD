@@ -1,0 +1,78 @@
+/* CONTAINER */
+.intro-container{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:justify;
+  padding:40px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #0f2c4d,
+    #1d3b6d,
+    #3b2b6d
+  );
+
+  color:white;
+}
+
+/* CARD INTRO */
+.intro-container h1{
+  font-size:40px;
+  margin-bottom:25px;
+  letter-spacing:1px;
+}
+
+.intro-container p{
+  max-width:800px;
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:40px;
+
+  padding:30px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.08);
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.15);
+}
+
+/* BUTTON */
+.btn-hadis{
+  padding:14px 32px;
+  font-size:18px;
+  font-weight:500;
+
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+
+  background: linear-gradient(
+    45deg,
+    #22c55e,
+    #16a34a
+  );
+
+  transition: all 0.3s ease;
+}
+
+.btn-hadis:hover{
+  transform: translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+  .intro-container h1{
+    font-size:30px;
+  }
+
+  .intro-container p{
+    font-size:16px;
+    padding:20px;
+  }
+
+}
