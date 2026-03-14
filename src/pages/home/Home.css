@@ -1,0 +1,117 @@
+
+.bg-animated {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-animated span {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.08);
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+}
+.bg-animated span:nth-child(1) {
+  width: 120px;
+  height: 80px;
+  border-radius: 15px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+  --start-rotation: 15deg;
+}
+
+.bg-animated span:nth-child(2) {
+  width: 90px;
+  height: 140px;
+  border-radius: 12px;
+  top: 60%;
+  right: 15%;
+  animation-delay: 2s;
+  --start-rotation: -20deg;
+}
+
+.bg-animated span:nth-child(3) {
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 4s;
+  --start-rotation: 25deg;
+}
+
+.bg-animated span:nth-child(4) {
+  width: 80px;
+  height: 120px;
+  border-radius: 8px;
+  top: 10%;
+  right: 30%;
+  animation-delay: 1s;
+  --start-rotation: -10deg;
+}
+
+.bg-animated span:nth-child(5) {
+  width: 110px;
+  height: 70px;
+  border-radius: 14px;
+  bottom: 40%;
+  right: 20%;
+  animation-delay: 3s;
+  --start-rotation: 30deg;
+}
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px) rotate(var(--start-rotation, 0deg));
+    }
+    50% {
+        transform: translateY(-20px)
+            rotate(calc(var(--start-rotation, 0deg) + 180deg));
+    }
+}
+.home-container {
+  min-height: 100vh;
+  /* background: #324b5c; */
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.home-header {
+  width: 100%;
+  /* background: #324b5c; */
+  color: #f5f1e8;
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.logo-arab {
+  font-size: 42px;
+  font-family: "Amiri", serif;
+}
+
+.home-header h1 {
+  letter-spacing: 2px;
+  margin: 10px 0 20px;
+}
+
+/* GRID MENU */
+.category-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;   /* ⬅️ supaya turun ke bawah kalau kepanjangan */
+  gap: 20px;
+}
+
+
+/* CARD */
+
